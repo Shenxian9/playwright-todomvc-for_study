@@ -1,10 +1,19 @@
 {
   "name": "playwright-todomvc",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于 Playwright 的 TodoMVC Web 自动化测试实践（开源项目复现与扩展）",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report test-results/html-report"
+  },
+  "keywords": [
+    "playwright",
+    "todomvc",
+    "automation-testing"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
